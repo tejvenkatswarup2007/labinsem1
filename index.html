@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Academic Portal</title>
+    <style>
+        /* Basic Reset and Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Layout */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #004080;
+            color: white;
+            padding: 20px 40px;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .register-btn {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .register-btn:hover {
+            background-color: #e68a00;
+        }
+
+        /* Hero Section with Big Title at Centre */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #e6f0ff;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #004080;
+            margin: 0;
+        }
+
+        /* Main Content Grid */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #004080;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Top Right Registration Button -->
+    <header>
+        <div class="logo">Campus Connect</div>
+        <button class="register-btn" onclick="alert('Registration button clicked!')">Register</button>
+    </header>
+
+    <!-- Big Title at Centre -->
+    <section class="hero">
+        <h1>Academic Portal</h1>
+    </section>
+
+    <!-- Main Content Sections -->
+    <div class="container">
+        <!-- Upcoming Events -->
+        <div class="card">
+            <h2>Upcoming Events</h2>
+            <p><strong>Annual Tech Fest 2026:</strong> Hackathons, coding contests, and project showcases.</p>
+            <p><strong>Guest Lecture:</strong> AI Trends in Industry by Industry Experts.</p>
+        </div>
+
+        <!-- Data and Information -->
+        <div class="card">
+            <h2>Data & Information</h2>
+            <p>Access your semester timetables, syllabus copies, lecture notes, and official circulars directly through this portal.</p>
+        </div>
+
+         <div class="center-content">
+            <h3>College Campus</h3>
+            <img src="c1.jpeg" alt="College Campus">
+            <p style="margin-top: 10px; color: #555;"><strong>Venue:</strong> Main Auditorium & Central Campus Building</p>
+        </div>
+
+        <!-- Venue -->
+        <div class="card" style="grid-column: span 2;">
+            <h2>Venue</h2>
+            <p><strong>Main Auditorium & Seminar Halls</strong><br>
+            Central Campus Building, Department of Computer Science and Engineering.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 College Academic Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
